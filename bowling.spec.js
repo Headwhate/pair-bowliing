@@ -17,7 +17,7 @@ describe('Bowling', function() {
       expect(new Bowling(rolls).score()).toEqual(10);
     });
 
-    it('points scored in the roll after a spare are counted twice', function() {
+   it('points scored in the roll after a spare are counted twice', function() {
       var rolls = [6, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
       expect(new Bowling(rolls).score()).toEqual(16);
     });
